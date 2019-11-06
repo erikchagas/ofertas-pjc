@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
-} from 'reactstrap';
+    Card
+} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import api from '../../services/api';
 
