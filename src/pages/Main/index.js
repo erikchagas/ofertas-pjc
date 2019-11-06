@@ -12,7 +12,7 @@ export default class Main extends Component {
     render() {
         return (
             <>
-                <div>
+            <div>
                 <Card style={{ width: '18rem' }}>
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
@@ -25,7 +25,7 @@ export default class Main extends Component {
                         <Card.Link href="#">Another Link</Card.Link>
                     </Card.Body>
                 </Card>
-                </div>
+            </div>
             </>
         );        
     }
