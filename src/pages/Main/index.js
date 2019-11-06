@@ -22,6 +22,9 @@ export default class Main extends Component {
 
         const response = await api.get('/offers');
 
+        this.setState({
+            offers: [...offers, ...response.data],
+        }, () => console.log('response --> ', response));
     }
 
     render() {
