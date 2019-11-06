@@ -18,6 +18,8 @@ export default class Main extends Component {
     }
 
     async componentDidMount() {
+        const { offers } = this.state;
+
     }
 
     render() {
