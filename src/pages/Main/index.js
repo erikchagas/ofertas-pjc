@@ -27,11 +27,6 @@ export default class Main extends Component {
             offers: [...offers, ...response.data],
         }, () => console.log('response --> ', response));
     }
-
-    handlerOnClick = (e) =>{
-        console.log('event --> ', e.target.id);
-    };
-
     render() {
         const { offers } = this.state;
         return (
@@ -48,8 +43,8 @@ export default class Main extends Component {
                                     <Card.Text>{offer.description}</Card.Text>
                                     <Card.Text>{`R$ ${offer.price}`}</Card.Text>
                                     <Link to={`/details/${encodeURIComponent(offer.id)}`}>
-                                    <Button 
-                                    id={offer.id}
+                                        <Button 
+                                            id={offer.id}
                                             variant="primary">
                                             Comprar
                                         </Button>
