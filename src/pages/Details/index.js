@@ -16,6 +16,14 @@ export default class Details extends Component {
         const { match } = this.props;
         const id = match.params.id;
         console.log(id);
+
+        const response = await api.get(`/offer/${match.params.id}`);
+        this.setState({
+            offer: {...this.state.offer, ...response.data}
+        }, () => {
+            console.log('response --> ', response);
+            console.log('this.state.offer --> ', this.state.offer);
+        });
     }
 
     render() {
