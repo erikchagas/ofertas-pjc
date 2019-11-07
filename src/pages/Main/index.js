@@ -36,7 +36,7 @@ export default class Main extends Component {
         return (
             <>
             <div>
-                <Container>
+                <CardGroup>
                     <Row className="justify-content-md-center">
                         {offers.map((offer) => (
                             <Card 
@@ -57,7 +57,7 @@ export default class Main extends Component {
                             </Card>
                         ))}
                     </Row>
-                </Container>
+                </CardGroup>
             </div>
             </>
         );        
