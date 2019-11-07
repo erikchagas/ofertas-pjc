@@ -28,6 +28,7 @@ export default class Main extends Component {
     }
 
     render() {
+        const { offers } = this.state;
         return (
             <>
             <div>
