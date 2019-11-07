@@ -34,6 +34,9 @@ export default class Main extends Component {
             <div>
                 <Container>
                     <Row className="justify-content-md-center">
+                        {offers.map((offer) => (
+                            <Card 
+                            key={offer.id}>
                     <Card.Body>
                         <Card.Title>Card Title</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
@@ -45,6 +48,7 @@ export default class Main extends Component {
                         <Card.Link href="#">Another Link</Card.Link>
                     </Card.Body>
                 </Card>
+                        ))}
                     </Row>
                 </Container>
             </div>
