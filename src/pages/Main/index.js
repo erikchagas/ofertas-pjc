@@ -49,6 +49,9 @@ export default class Main extends Component {
                                     <Link to={`/details/${encodeURIComponent(offer.id)}`}>
                                     <Button 
                                     id={offer.id}
+                                            variant="primary">
+                                            Comprar
+                                        </Button>
                                     </Link>
                                 </Card.Body>
                             </Card>
