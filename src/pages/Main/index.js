@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Card, Button, Container, Row
+    Card, Button, CardGroup, Row
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
