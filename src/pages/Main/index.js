@@ -27,6 +27,10 @@ export default class Main extends Component {
         }, () => console.log('response --> ', response));
     }
 
+    handlerOnClick = (e) =>{
+        console.log('event --> ', e.target.id);
+    };
+
     render() {
         const { offers } = this.state;
         return (
@@ -37,7 +41,7 @@ export default class Main extends Component {
                         {offers.map((offer) => (
                             <Card 
                             key={offer.id}>
-                    <Card.Body>
+                                <Card.Body>
                                     <Card.Img variant="top" src={offer.image.url} />
                                     <Card.Title>{offer.title}</Card.Title>
                                     <Card.Text>{offer.description}</Card.Text>
@@ -46,8 +50,8 @@ export default class Main extends Component {
                                     id={offer.id}
                                     variant="primary"
                                     onClick={this.handlerOnClick}>Comprar</Button>
-                    </Card.Body>
-                </Card>
+                                </Card.Body>
+                            </Card>
                         ))}
                     </Row>
                 </Container>
