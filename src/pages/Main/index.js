@@ -25,7 +25,10 @@ export default class Main extends Component {
 
         this.setState({
             offers: [...offers, ...response.data],
-        }, () => console.log('response --> ', response));
+        }, () => {
+            console.log('response --> ', response);
+            console.log('this.state.offers --> ', this.state.offers);
+        });
     }
     render() {
         const { offers } = this.state;
