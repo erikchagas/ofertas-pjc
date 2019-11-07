@@ -46,10 +46,10 @@ export default class Main extends Component {
                                     <Card.Title>{offer.title}</Card.Title>
                                     <Card.Text>{offer.description}</Card.Text>
                                     <Card.Text>{`R$ ${offer.price}`}</Card.Text>
+                                    <Link to={`/details/${encodeURIComponent(offer.id)}`}>
                                     <Button 
                                     id={offer.id}
-                                    variant="primary"
-                                    onClick={this.handlerOnClick}>Comprar</Button>
+                                    </Link>
                                 </Card.Body>
                             </Card>
                         ))}
